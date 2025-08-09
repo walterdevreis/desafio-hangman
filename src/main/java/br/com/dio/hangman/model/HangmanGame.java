@@ -36,6 +36,10 @@ public class HangmanGame {
         this.hangmanInitialSize = hangman.length();
     }
 
+    public HangmanGameStatus getHangmanGameStatus(){
+        return hangmanGameStatus;
+    }
+
     public void inputCharacter(final char character){
         if (this.hangmanGameStatus != PENDING){
             var message = this.hangmanGameStatus == WIN ?
